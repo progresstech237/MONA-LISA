@@ -1,0 +1,48 @@
+{
+  "name": "👑✦𝐌𝐎𝐍𝐀 𝐋𝐈𝐒𝐀🤭✦👑",
+  "description": "WhatsApp Multi-Device Bot created by PROGRESS TECH",
+  "repository": "https://github.com/progresstech237/MONA-LISA",
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "multi-device",
+    "progress-tech"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "SESSION_ID": {
+      "description": "Enter your WhatsApp Session ID",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Enter owner phone number with country code (e.g., 254700000000)",
+      "required": true
+    },
+    "PREFIX": {
+      "description": "Bot command prefix",
+      "value": ".",
+      "required": false
+    },
+    "MODE": {
+      "description": "Bot mode (public or private)",
+      "value": "public",
+      "required": false
+    },
+    "BOT_NAME": {
+      "description": "Bot Display Name",
+      "value": "MONA-LISA",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
+

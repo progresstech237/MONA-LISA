@@ -1,0 +1,6 @@
+node_modules
+session
+.env
+*.log
+message_backup.json
+sessionErrorCount.json
